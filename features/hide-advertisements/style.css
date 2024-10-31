@@ -1,0 +1,14 @@
+body.colorComment .scratchtoolsAd .comment-bubble, .scratchtoolsAd .comment-bubble::before {
+    background-color: #eccedf !important;
+    border: 1px solid #ff6680;
+}
+
+body.colorComment .scratchtoolsAd .comment-bubble:before {
+    border: 1px solid #ff6680;
+    border-right: transparent;
+    background-color: #eccedf !important;
+}
+
+body.hideComment .scratchtoolsAd {
+    display: none;
+}

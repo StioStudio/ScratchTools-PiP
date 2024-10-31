@@ -1,0 +1,24 @@
+var name = ScratchTools.Storage.font;
+var style = document.createElement("style");
+style.className = "scratchtoolsCustomFont";
+style.innerHTML = `
+@import url('https://fonts.googleapis.com/css2?family=${name
+  .replaceAll(")", "")
+  .replaceAll("'", "")
+  .replaceAll("}", "")
+  .replaceAll(" ", "+")}:wght@200;300;400;500;600;700&display=swap');
+
+:not(code) {
+    font-family: '${name
+      .replaceAll("\\", "")
+      .replaceAll("'", "")
+      .replaceAll("}", "")}', sans-serif;
+}
+`;
+document.body.appendChild(style);
+
+ScratchTools.setDisable("custom-fonts", function () {
+  document.querySelectorAll(".scratchtoolsCustomFont").forEach(function (el) {
+    el.remove();
+  });
+});

@@ -1,0 +1,17 @@
+{
+  "title": "Align Objects in Paint Editor",
+  "description": "Adds a button to the paint editor that allows you to align selected items.",
+  "credits": [
+    { "username": "rgantzos", "url": "https://scratch.mit.edu/users/rgantzos/" }
+  ],
+  "type": ["Editor"],
+  "tags": ["New"],
+  "dynamic": true,
+  "scripts": [{ "file": "script.js", "runOn": "/projects/*" }],
+  "styles": [{ "file": "style.css", "runOn": "/projects/*" }],
+  "resources": [{ "name": "paint-align", "path": "/align.svg" }],
+  "components": [{
+    "type": "info",
+    "content": "Holding the shift key while clicking the align items button will center all selected items on the item in the furthest-back layer."
+  }]
+}

@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    --preview-svg: url("./themes/dark.svg");
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root{
+    --preview-svg: url("./themes/light.svg");
+  }
+}
+
+.center-perfectly {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: calc(100% - 4rem);
+}
+
+body {
+  color: white;
+  text-align: center;
+  background-image: url(./background.svg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+.big {
+    font-size: 3rem;
+}
+
+button {
+    background-color: white;
+    color: #ff9f00;
+    min-width: 10rem;
+    font-family: "Inter", sans-serif;
+    padding: .5rem;
+    outline: none;
+    border: 0px;
+    border-radius: .25rem;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    transition: top .3s;
+    font-weight: bold;
+}
+
+button:hover {
+    top: .5rem;
+}
+
+.feature {
+    width: 20rem;
+    max-width: 20%;
+    display: inline-block;
+    background-color: white;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    opacity: .6;
+    border: 3px solid #ff9f0000;
+    position: relative;
+    top: 0px;
+    transition: opacity .3s, border .3s, top .3s;
+    color: black;
+    cursor: pointer;
+}
+
+.feature:hover {
+    top: -.5rem;
+}
+
+.features {
+    text-align: center;
+}
+
+.feature span {
+    opacity: .5;
+}
+
+.feature div {
+    width: 100%;
+    height: 10rem;
+    background-position: center center;
+    background-size: cover;
+}
+
+.feature.enabled {
+    opacity: 1;
+    border: 3px solid #ff9f00;
+}
+
+.center-perfectly {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.feature p {
+    height: 5rem;
+    overflow-y: hidden;
+}
+
+.circle.theme-select{
+    border:3px solid white;
+  }
+  .theme-preview{
+    position:absolute;
+  
+  }
+  .themes{
+    display: flex;
+    margin-top:23rem;
+  }
+  .theme-selection{
+    height:30.25rem;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .hidden{
+    display: none;
+  }
+
+  .circle {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    border: 3px solid #ff9f00;
+  }
+
+  .themes {
+    background-color: #ffffff50;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  button[data-function=end] {
+    margin-top: 1rem;
+  }
+
+  .theme-preview svg {
+    height: 22rem;
+  }

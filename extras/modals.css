@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.st-modal-blur-bg {
+  backdrop-filter: blur(5px) brightness(0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 2147483646;
+}
+
+.st-modal {
+  position: fixed;
+  top: 15rem;
+  width: calc(40% - 4rem);
+  padding: 2rem;
+  left: 30%;
+  background-color: var(--background);
+  border-radius: 0.5rem;
+  padding-top: 3rem;
+  z-index: 2147483647;
+}
+
+.st-modal h1 {
+  font-size: 1.5rem !important;
+}
+
+.st-modal * {
+  font-family: "Inter", sans-serif;
+  color: var(--primary-color);
+}
+
+.st-modal-header {
+  background-color: var(--theme);
+  position: fixed;
+  top: 15rem;
+  width: 40%;
+  height: 1rem;
+  left: 30%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.st-modal p {
+  font-size: 1rem;
+}
+
+.st-modal code {
+  overflow-wrap: break-word;
+    background-color: var(--searchbar-bg);
+    padding: 0.4rem;
+    border-radius: 0.25rem;
+    line-height: 1.7rem;
+    display: block;
+}
+
+.st-modal button {
+  background-color: var(--theme) !important;
+  padding: 0.5rem !important;
+  outline: none !important;
+  border-radius: 0.25rem !important;
+  border: 0px !important;
+  color: white !important;
+  min-width: 6rem !important;
+  margin-top: 1rem !important;
+  position: relative !important;
+  top: 0px !important;
+  transition: top .15s !important;
+  cursor: pointer !important;
+  margin-right: .5rem !important;
+}
+
+.st-modal button:hover {
+  top: .4rem !important;
+}
+
+.st-modal code {
+  white-space: pre-wrap;
+}

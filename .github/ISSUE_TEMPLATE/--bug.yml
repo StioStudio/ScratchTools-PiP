@@ -1,0 +1,28 @@
+name: 🐛 Bug
+description: Report a bug for ScratchTool.
+labels: ["type: bug", "status: needs review"]
+body:
+
+  - type: textarea
+    id: describe
+    attributes:
+      label: Describe the bug. What is going wrong?
+      description: We'd like to know what the bug is so that we can fix it very soon.
+      placeholder: Type here
+    validations:
+      required: true
+  
+  - type: textarea
+    id: why
+    attributes:
+      label: What is causing the bug?
+      description: We aren't asking for code, we just want to know when and where this code is happening.
+      placeholder: For example- "When I go to my own profile and close the comments."
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: You can put more info here if you have any.

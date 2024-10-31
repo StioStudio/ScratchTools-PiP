@@ -1,0 +1,12 @@
+{
+    "title": "Colored Shadows",
+    "description": "Replaces the shadow created when you drag a block near another block with the color of the block that is being moved.",
+    "credits": [
+      { "username": "rgantzos", "url": "https://scratch.mit.edu/users/rgantzos/" }
+    ],
+    "type": ["Editor"],
+    "tags": ["New"],
+    "dynamic": true,
+    "styles": [{ "file": "style.css", "runOn": "/*" }]
+  }
+  
